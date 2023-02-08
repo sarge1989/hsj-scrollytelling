@@ -25,6 +25,17 @@ body {
 
 }
 
+/* CSS for animations with key */
+.key {
+    background:
+        url(img/CPF-BG.jpg) no-repeat center center;
+    background-size: cover;
+
+    position: static;
+    width: 100vw;
+    height: 100vh;
+}
+
 
 /* CSS for the title pages */
 .cover {
