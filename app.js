@@ -77,7 +77,7 @@ const ScrollLottie = (obj) => { //https://github.com/chrisgannon/ScrollLottie
 ScrollLottie({
   target: ".scrollytelling-container", //the division the lottie animation will be in
   path: `./animations/01_HSJ${s}.json`, //downloaded json file
-  duration: s == "_d" ? 1 : 0, //adds smooth scrolling, can set any number
+  duration: s == "_d" ? 1 : 0, //adds smooth scrolling, can set any number (TO JOHN: CHANGING THIS MIGHT INFLUENCE LAGGINESS)
   end: s == "_d" ? "+=2400%" : "+=1200%", //how many percent of the viewheight a user has to scroll to finish the animation
   // totalFrames: 708, //get this from the website. essentially the total frames for the whole animation (if want to set this can change anim.totalFrames to obj.totalFrames in the function above)
   start: "top top", //where trigger starts
@@ -93,3 +93,24 @@ ScrollTrigger.create({
   end: s == "_d" ? "+=2200%" : "+=1000%",
   pin: true,
 });
+
+// //01_HSJ
+// ScrollLottie({
+//   target: ".scrollytelling-2", //the division the lottie animation will be in
+//   path: `./animations/01_HSJ${s}.json`, //downloaded json file
+//   duration: s == "_d" ? 1 : 0, //adds smooth scrolling, can set any number
+//   end: s == "_d" ? "+=2400%" : "+=1200%", //how many percent of the viewheight a user has to scroll to finish the animation
+//   // totalFrames: 708, //get this from the website. essentially the total frames for the whole animation (if want to set this can change anim.totalFrames to obj.totalFrames in the function above)
+//   start: "top top", //where trigger starts
+//   pin: false,
+//   startingFrame: 15, //usually 0, unless we want animation to start from a later frame in this case
+//   aspectRatio: 'xMidYMin meet', //toggle svg aspect ratio setting
+// });
+
+// //trigger for div to be pinned, has to be seperated from above ScrollLottie function as I want the animation to play at a different instance compared to when i want to pin it...
+// ScrollTrigger.create({
+//   trigger: ".scrollytelling-container",
+//   start: "top top",
+//   end: s == "_d" ? "+=2200%" : "+=1000%",
+//   pin: true,
+// });
