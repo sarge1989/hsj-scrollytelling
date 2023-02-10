@@ -90,7 +90,7 @@ ScrollLottie({
 ScrollTrigger.create({
   trigger: ".scrollytelling-container",
   start: "top top",
-  end: s == "_d" ? "+=2200%" : "+=1000%",
+  end: s == "_d" ? "+=2200%" : "+=1150%",
   pin: true,
 });
 
