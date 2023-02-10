@@ -68,7 +68,7 @@ const ScrollLottie = (obj) => { //https://github.com/chrisgannon/ScrollLottie
       }
     }
   });
-  ScrollTrigger.config({
+  ScrollTrigger.config({ //To Royston - added this to make the performance better on mobile.
     ignoreMobileResize: true
   });
 }
