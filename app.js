@@ -78,7 +78,7 @@ ScrollLottie({
   target: ".scrollytelling-container", //the division the lottie animation will be in
   path: `./animations/03_HSJ${s}.json`, //downloaded json file
   duration: s == "_d" ? 1 : 0, //adds smooth scrolling, can set any number (TO JOHN: CHANGING THIS MIGHT INFLUENCE LAGGINESS)
-  end: s == "_d" ? "+=2400%" : "+=1500%", //how many percent of the viewheight a user has to scroll to finish the animation
+  end: s == "_d" ? "+=1450%" : "+=1050%", //how many percent of the viewheight a user has to scroll to finish the animation
   // totalFrames: 708, //get this from the website. essentially the total frames for the whole animation (if want to set this can change anim.totalFrames to obj.totalFrames in the function above)
   start: "top top", //where trigger starts
   pin: false,
@@ -90,7 +90,7 @@ ScrollLottie({
 ScrollTrigger.create({
   trigger: ".scrollytelling-container",
   start: "top top",
-  end: s == "_d" ? "+=2200%" : "+=1000%",
+  end: s == "_d" ? "+=1450%" : "+=1000%",
   pin: true,
 });
 
